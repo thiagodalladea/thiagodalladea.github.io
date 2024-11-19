@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognimind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <header>
+        <div class="acessibility">
+            <div class="acessibility-container1">
+                <p class="acessibility-text" tabindex="1">Ir para o conteúdo [ALT+ 1]</p>
+                <p class="acessibility-text" tabindex="2">Ir para o menu [ALT + 2]</p>
+                <p class="acessibility-text" tabindex="3">Ir para o rodapé [ALT + 3]</p>
+            </div>
+            <div class="acessibility-container2">
+                <p id="contrast" class="acessibility-text" tabindex="4" onclick="toggleContrast()">CONTRASTE</p>
+                <p id="decrease" class="acessibility-text" tabindex="5" onclick="decreaseFont()">A-</p>
+                <p id="increase" class="acessibility-text" tabindex="6" onclick="increaseFont()">A+</p>
+            </div>            
+        </div>
+
+        <div class="bar" id="menu" tabindex="-1">
+            <div class="bar-container1">
+                <a href="index.html">
+                    <img src="./assets/logo.svg" href="index.html">
+                </a>
+            </div>
+            <div class="bar-container2">
+                <a href="index.html" class="bar-text">Home</a>
+                <a href="index.html" class="bar-text">Quem somos</a>
+                <a href="index.html" class="bar-text">Serviços</a>
+                <a href="index.html" class="bar-text">Soluções</a>
+                <a href="contato.html" class="bar-text">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" tabindex="-1">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Entregando Serviços Superiores.</h1>
+                    <h1 class="hero-text-blue">Soluções em TI</h1>
+                    <h2>Especialistas em alinhar a estratégia de negócios com soluções tecnológicas de ponta.</h2>
+                    <img src="./assets/X.png" alt="Logo da rede social X" />
+                    <img src="./assets/instagram.png" alt="Logo da rede social Instagram" />
+                    <img src="./assets/linkedin.png" alt="Logo da rede social LinkedIn" />
+                    <img src="./assets/facebook.png" alt="Logo da rede social Facebook" />
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/image-1.png"
+                        alt="
+                        A imagem ilustra três pessoas sobre barras de diferentes alturas, com uma seta azul ascendente ao fundo, simbolizando crescimento e progresso. O design é minimalista e moderno, com cores predominantes azul e preto." />
+                </div>
+            </div>
+            <div class="hero-container-2">
+                <button class="button-container" onclick="window.location.href='contato.html';">ENTRAR EM CONTATO</button>
+            </div>
+        </section>
+
+        <div tabindex="7">
+            <h2 class="about-title">Quem Somos</h2>
+        </div>
+
+        <section id="about">
+            <div class="content-wrapper">
+                <div class="image-column">
+                    <img loading="lazy" src="./assets/image-3.png" alt="Cognimind company illustration"
+                        class="company-image" />
+                </div>
+                <article class="text-column">
+                    <div class="text-content">
+                        <h1 class="company-title">A Cognimind</h1>
+                        <p class="company-intro">
+                            A Cognimind é uma empresa de tecnologia inovadora<br />
+                            dedicada a transformar desafios empresariais em<br />
+                            oportunidades de crescimento.
+                        </p>
+                        <p class="team-description">
+                            Com uma equipe altamente qualificada, somos<br />
+                            especialistas em alinhar a estratégia de negócios com<br />
+                            soluções tecnológicas de ponta.
+                        </p>
+                        <p class="services-description">
+                            Nossa atuação abrange desde a consultoria em arquitetura<br />
+                            de soluções até a implementação de estratégias de<br />
+                            segurança cibernética, sempre com o objetivo de otimizar<br />
+                            processos, reduzir complexidades e garantir a excelência<br />
+                            operacional dos nossos clientes.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="services-container">
+                <h2 class="services-title">Serviços</h2>
+                <div class="services-grid">
+                    <div class="services-row">
+                        <article class="service-card">
+                            <img loading="lazy"
+                                id="logo-solutions"
+                                src="./assets/logo-min.png"
+                                alt="Ícone de resposta a incidentes" class="service-icon" />
+                            <h3 class="service-heading">Respostas a Incidentes</h3>
+                            <p class="service-description">Serviços de detecção, análise e resposta rápida a incidentes
+                                de segurança, incluindo recuperação e análise pós-incidente.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <img loading="lazy"
+                                id="logo-solutions"
+                                src="./assets/logo-min.png"
+                                alt="Ícone de gestão de identidade" class="service-icon" />
+                            <h3 class="service-heading">Gestão de Identidade e Acessos</h3>
+                            <p class="service-description">Implementação e gestão de políticas de controle de acesso,
+                                incluindo autenticação multifator (MFA) e Single Sign-On (SSO).</p>
+                        </article>
+
+                        <article class="service-card">
+                            <img loading="lazy"
+                                id="logo-solutions" 
+                                src="./assets/logo-min.png"
+                                alt="Ícone de gestão na nuvem" class="service-icon" />
+                            <h3 class="service-heading">Gestão de Identidades na Nuvem</h3>
+                            <p class="service-description">Soluções para gerenciamento de identidades e acessos em
+                                ambientes de nuvem.</p>
+                        </article>
+                    </div>
+
+                    <div class="services-row">
+                        <article class="service-card">
+                            <img loading="lazy"
+                                id="logo-solutions"
+                                src="./assets/logo-min.png"
+                                alt="Ícone de governança" class="service-icon" />
+                            <h3 class="service-heading">Governança de TI</h3>
+                            <p class="service-description">Desenvolvimento de políticas e procedimentos para gestão
+                                eficiente da segurança da informação.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <img loading="lazy"
+                                id="logo-solutions"
+                                src="./assets/logo-min.png"
+                                alt="Ícone de consultoria" class="service-icon" />
+                            <h3 class="service-heading">Consultoria em LGPD e GDPR</h3>
+                            <p class="service-description">Criação e implementação de políticas de segurança
+                                customizadas para as necessidades do cliente.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <img loading="lazy"
+                                id="logo-solutions"
+                                src="./assets/logo-min.png"
+                                alt="Ícone de políticas de segurança" class="service-icon" />
+                            <h3 class="service-heading">Gestão de Políticas de Segurança</h3>
+                            <p class="service-description">Assistência para conformidade com regulamentos de proteção de
+                                dados pessoais.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="cta-button" type="button">CONHEÇA TODOS NOSSOS SERVIÇOS</button>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Vamos discutir seus projetos!</h2>
+                <p class="contact-description">
+                    Nós nos orgulhamos de nossa capacidade de executar e entregar resultados. Entre em contato para
+                    discutirmos as necessidades do seu projeto com nossa equipe, entraremos em contato o mais breve
+                    possível.
+                </p>
+                <button class="contact-button" tabindex="0" onclick="window.location.href='contato.html';">ENTRAR EM CONTATO</button>
+            </div>
+        </section>
+
+        <section class="solutions-section">
+            <h2 class="solutions-heading">Soluções</h2>
+
+            <div class="solutions-container">
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <header class="solution-header-1">
+                            <h3 class="solution-title">Análise de Vulnerabilidades</h3>
+                            <img id ="logo-solutions" src="./assets/logo-min.png"
+                                alt="Ícone de análise de vulnerabilidades" class="solution-icon">
+                        </header>
+                        <p class="solution-description-1">Identificação de riscos potenciais que podem impactar a
+                            segurança das informações.</p>
+
+                        <header class="solution-header-1">
+                            <h3 class="solution-title">Avaliação de Riscos</h3>
+                            <img id ="logo-solutions" src="./assets/logo-min.png"
+                                alt="Ícone de avaliação de riscos" class="solution-icon">
+                        </header>
+                        <p class="solution-description-1">Verificação detalhada das fraquezas em sistemas, redes e
+                            aplicações através de scanners automatizados e revisões manuais.</p>
+
+                        <header class="solution-header-1">
+                            <h3 class="solution-title">Gestão de Conformidade</h3>
+                            <img id ="logo-solutions" src="./assets/logo-min.png"
+                                alt="Ícone de gestão de conformidade" class="solution-icon">
+                        </header>
+                        <p class="solution-description-1">Assessoria para garantir que a organização esteja em
+                            conformidade com normas e regulamentações, como LGPD, GDPR, ISO 27001.</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <img src="./assets/image-4.png" />
+                    </div>
+
+
+                    <div class="solution-card">
+                        <header class="solution-header-2">
+                            <img id ="logo-solutions" src="./assets/logo-min.png"
+                                alt="Ícone de pentest" class="solution-icon">
+                            <h3 class="solution-title">PenTest (Teste de Intrusão)</h3>
+                        </header>
+                        <p class="solution-description-2">Simulações controladas de ataques cibernéticos para
+                            identificar
+                            e corrigir vulnerabilidades antes que sejam exploradas.</p>
+
+                        <header class="solution-header-2">
+                            <img id ="logo-solutions" src="./assets/logo-min.png"
+                                alt="Ícone de auditoria" class="solution-icon">
+                            <h3 class="solution-title">Auditorias de Conformidade</h3>
+                        </header>
+                        <p class="solution-description-2">Revisão e auditoria para assegurar que os sistemas e práticas
+                            estão em conformidade com normas e regulamentos.</p>
+
+                        <header class="solution-header-2">
+                            <img id ="logo-solutions" src="./assets/logo-min.png"
+                                alt="Ícone de proteção endpoint" class="solution-icon">
+                            <h3 class="solution-title">Soluções de Endpoint Protection</h3>
+                        </header>
+                        <p class="solution-description-2">Ferramentas para proteção de dispositivos finais contra
+                            malware
+                            e ataques cibernéticos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="cta-button" type="button">CONHEÇA TODAS NOSSAS SOLUÇÕES</button>
+        </section>
+
+        <section class="clients-section">
+            <div class="clients-container">
+                <h2 class="clients-title">Clientes</h2>
+                <div class="clients-logo-grid">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/fbfad8ffc551e42d0d70f17bbe3918aeba642c924cc77531735bdf843d8d8ded?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                        alt="Client logo 1" class="client-logo" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea6520f572b7ee640f917b6697c666d6046f8d1bc8c70405cca1197ab7eae67a?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                        alt="Client logo 2" class="client-logo" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3dd374837b65b5638e9bb73cd6ea40c51039d7de087f0bc11cc937374d333c4?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                        alt="Client logo 3" class="client-logo" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a583fe9351eede1a17606c110d90c222d0fdfae5d642f574c29fb3c023f3ca0?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                        alt="Client logo 4" class="client-logo" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/e304ede8dccbb060c82259b2e0c14ad76bb51e7535891a4f998e325cb4cf6b17?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                        alt="Client logo 5" class="client-logo" />
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-container" id="footer" tabindex="-1">
+            <div class="footer-content">
+                <div class="footer-columns">
+                    <section class="brand-column">
+                        <div class="brand-content">
+                            <img loading="lazy" src="./assets/logo2.png" alt="Cognimind company logo" class="logo" />
+                            <p class="company-description">A Cognimind é uma empresa de tecnologia inovadora dedicada a
+                                transformar desafios empresariais em oportunidades de crescimento.</p>
+                            <h2 class="social-heading">Siga-nos!</h2>
+                            <nav class="social-icons">
+                                <a href="#" aria-label="Visit our Facebook page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/67e2afcfcb549a426e2e28a383317ba5f4378d3bd63e3adb3b037c747f184668?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                                <a href="#" aria-label="Visit our Twitter page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2518ce4e341ce935b1a82299271cf2426770c06c5844f21e61e735964a11d624?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                                <a href="#" aria-label="Visit our Instagram page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b69515e79a5805ce332fa2db11535bc9591239afd4bee83067dd41d1ebd61fc?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                                <a href="#" aria-label="Visit our LinkedIn page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/199992f712965345db8dd78c8c2f2d3f6c8342e866d83df73652e016728ffa38?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                            </nav>
+                            <p class="copyright">Cognimind © 2024</p>
+                        </div>
+                    </section>
+
+                    <section class="services-column">
+                        <div class="services-content">
+                            <h2 class="services-heading">Serviços</h2>
+                            <nav class="services-list">
+                                (NOC) Network Operations Center<br />
+                                (SOC) Security Operations Center<br />
+                                Respostas a Incidentes<br />
+                                Gestão de Identidade e Acessos<br />
+                                Treinamentos de Conscientização e Acessos<br />
+                                Treinamentos de Conscientização em Segurança<br />
+                                Formação em Gestão de Segurança<br />
+                                Gestão de Identidades na Nuvem<br />
+                                Governança de TI<br />
+                                Consultoria em LGPD e GDPR<br />
+                                Gestão de Políticas de Segurança
+                            </nav>
+                        </div>
+                    </section>
+
+                    <section class="solutions-column">
+                        <div class="solutions-content">
+                            <h2 class="solutions-footer">Soluções</h2>
+                            <nav class="solutions-list">
+                                Análise de Vulnerabilidades<br />
+                                Avaliação de Riscos<br />
+                                Gestão de Conformidade<br />
+                                PenTest (Teste de Intrusão)<br />
+                                Auditorias de Conformidade<br />
+                                Avaliação de Maturidade em Segurança<br />
+                                Firewalls de Próxima Geração (NGFW)<br />
+                                Soluções de Endpoint Protection<br />
+                                DLP (Data Loss Prevention)<br />
+                                Segurança em Nuvem<br />
+                                Proteção de Dados em Trânsito e em Repouso<br />
+                                Segurança em Nuvem<br />
+                                Palo Alto Networks<br />
+                                Cisco Firepower<br />
+                                Fortinet FortiGate<br />
+                                SentinelOne<br />
+                                Forcepoint<br />
+                                CrowdStrike Falcon
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.addEventListener('keydown', (event) => {
+            if (event.altKey) {
+                let element;
+                switch (event.key) {
+                    case '1': // Alt + 1
+                        element = document.getElementById('hero');
+                        break;
+                    case '2': // Alt + 2
+                        element = document.getElementById('menu');
+                        break;
+                    case '3': // Alt + 3
+                        element = document.getElementById('footer');
+                        break;
+                }
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    element.focus();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

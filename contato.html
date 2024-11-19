@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognimind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <header>
+        <div class="acessibility">
+            <div class="acessibility-container1">
+                <p class="acessibility-text" tabindex="1">Ir para o conteúdo [ALT + 1]</p>
+                <p class="acessibility-text" tabindex="2">Ir para o menu [ALT + 2]</p>
+                <p class="acessibility-text" tabindex="3">Ir para o rodapé [ALT + 3]</p>
+            </div>
+            <div class="acessibility-container2">
+                <p id="contrast" class="acessibility-text" tabindex="4" onclick="toggleContrast()">CONTRASTE</p>
+                <p id="decrease" class="acessibility-text" tabindex="5" onclick="decreaseFont()">A-</p>
+                <p id="increase" class="acessibility-text" tabindex="6" onclick="increaseFont()">A+</p>
+            </div>
+        </div>
+
+        <div class="bar" id="menu">
+            <div class="bar-container1">
+                <a href="index.html">
+                    <img src="./assets/logo.svg" href="index.html">
+                </a>
+            </div>
+            <div class="bar-container2">
+                <a href="index.html" class="bar-text">Home</a>
+                <a href="index.html" class="bar-text">Quem somos</a>
+                <a href="index.html" class="bar-text">Serviços</a>
+                <a href="index.html" class="bar-text">Soluções</a>
+                <a href="index.html" class="bar-text">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1 class="contato-title">Contato</h1>
+        </div>
+
+        <div class="form-container" id="hero">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF (XXX.XXX.XXX-XX)" required>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="assunto">Assunto do E-mail</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto do e-mail" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="corpo">Corpo do E-mail</label>
+                    <textarea id="corpo" name="corpo" placeholder="Digite o conteúdo do e-mail" required></textarea>
+                </div>
+    
+                <div class="contato-button">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+        <footer class="footer-container" id="footer">
+            <div class="footer-content">
+                <div class="footer-columns">
+                    <section class="brand-column">
+                        <div class="brand-content">
+                            <img loading="lazy" src="./assets/logo2.png" alt="Cognimind company logo" class="logo" />
+                            <p class="company-description">A Cognimind é uma empresa de tecnologia inovadora dedicada a
+                                transformar desafios empresariais em oportunidades de crescimento.</p>
+                            <h2 class="social-heading">Siga-nos!</h2>
+                            <nav class="social-icons">
+                                <a href="#" aria-label="Visit our Facebook page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/67e2afcfcb549a426e2e28a383317ba5f4378d3bd63e3adb3b037c747f184668?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                                <a href="#" aria-label="Visit our Twitter page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2518ce4e341ce935b1a82299271cf2426770c06c5844f21e61e735964a11d624?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                                <a href="#" aria-label="Visit our Instagram page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b69515e79a5805ce332fa2db11535bc9591239afd4bee83067dd41d1ebd61fc?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                                <a href="#" aria-label="Visit our LinkedIn page">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/199992f712965345db8dd78c8c2f2d3f6c8342e866d83df73652e016728ffa38?placeholderIfAbsent=true&apiKey=dec74f2995b149d5ba0e843bb6d74ac1"
+                                        alt="" class="social-icon" />
+                                </a>
+                            </nav>
+                            <p class="copyright">Cognimind © 2024</p>
+                        </div>
+                    </section>
+
+                    <section class="services-column">
+                        <div class="services-content">
+                            <h2 class="services-heading">Serviços</h2>
+                            <nav class="services-list">
+                                (NOC) Network Operations Center<br />
+                                (SOC) Security Operations Center<br />
+                                Respostas a Incidentes<br />
+                                Gestão de Identidade e Acessos<br />
+                                Treinamentos de Conscientização e Acessos<br />
+                                Treinamentos de Conscientização em Segurança<br />
+                                Formação em Gestão de Segurança<br />
+                                Gestão de Identidades na Nuvem<br />
+                                Governança de TI<br />
+                                Consultoria em LGPD e GDPR<br />
+                                Gestão de Políticas de Segurança
+                            </nav>
+                        </div>
+                    </section>
+
+                    <section class="solutions-column">
+                        <div class="solutions-content">
+                            <h2 class="solutions-footer">Soluções</h2>
+                            <nav class="solutions-list">
+                                Análise de Vulnerabilidades<br />
+                                Avaliação de Riscos<br />
+                                Gestão de Conformidade<br />
+                                PenTest (Teste de Intrusão)<br />
+                                Auditorias de Conformidade<br />
+                                Avaliação de Maturidade em Segurança<br />
+                                Firewalls de Próxima Geração (NGFW)<br />
+                                Soluções de Endpoint Protection<br />
+                                DLP (Data Loss Prevention)<br />
+                                Segurança em Nuvem<br />
+                                Proteção de Dados em Trânsito e em Repouso<br />
+                                Segurança em Nuvem<br />
+                                Palo Alto Networks<br />
+                                Cisco Firepower<br />
+                                Fortinet FortiGate<br />
+                                SentinelOne<br />
+                                Forcepoint<br />
+                                CrowdStrike Falcon
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script>
+        document.addEventListener('keydown', (event) => {
+            if (event.altKey) {
+                let element;
+                switch (event.key) {
+                    case '1': // Alt + 1
+                        element = document.getElementById('hero');
+                        break;
+                    case '2': // Alt + 2
+                        element = document.getElementById('menu');
+                        break;
+                    case '3': // Alt + 3
+                        element = document.getElementById('footer');
+                        break;
+                }
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    element.focus();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
