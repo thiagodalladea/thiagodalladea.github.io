@@ -41,7 +41,7 @@ function increaseFont() {
 
 // Função para diminuir a fonte
 function decreaseFont() {
-    const elementos = document.querySelectorAll("p, a, h1, h2, h3, h4, h5, h6, nav, button");
+    const elementos = document.querySelectorAll("p, a, h1, h2, h3, h4, h5, h6, nav, button, label");
     if (cont > 0) { // Limita a diminuição de fonte a 2 vezes
         cont--;
         elementos.forEach(function (elemento) {
